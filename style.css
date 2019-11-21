@@ -1,0 +1,446 @@
+/*
+BOJE:
+_________
+
+deeppink
+turquoise
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Cute+Font|Nunito');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Cute Font', cursive;
+}
+
+body {
+    line-height: 1.3;
+    font-size: 16px;
+    font-family: 'Nunito', sans-serif;
+}
+
+/***** GRID *******/
+.row {
+    width: 100%;
+    display: flex;
+}
+
+.row::after {
+    display: block;
+    clear: both;
+    content: "";
+}
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+[class*="col-"] {
+    float: left;
+}
+
+/*******************
+********************
+CUSTOM STYLES 
+********************
+*******************/
+header {
+    background-image: url(img/header.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 80vh;
+}
+
+header h1 {
+    float: left;
+    margin-top: 20px;
+    margin-left: 50px;
+    font-size: 3rem;
+    color: white;
+}
+
+nav {
+    float: right;
+}
+
+nav ul li {
+    margin-top: 25px;
+    margin-right: 50px;
+    display: inline-block;
+    font-size: 1.7rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+header .col-6 {
+    margin-top: 110px;
+    margin-right: 50px;
+}
+
+header .col-6 h2 {
+    text-align: center;
+    color: white;
+    background: rgba(255, 255, 255, 0.4);
+    font-size: 3rem;
+}
+
+header .col-6 p {
+    color: white;
+    text-align: right;
+}
+
+header .col-6 button {
+    float: right;
+    padding: 12px 30px;
+    background: deeppink;
+    border: 2px solid white;
+    border-radius: 12px;
+    color: white;
+    font-weight: bold;
+}
+
+header .doleeee .col-4 {
+    margin-top: 70px;
+}
+
+header .doleeee .col-4 hr {
+    border: 2px solid white;
+}
+
+header .doleeee .col-4 .col-3 {
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.container .col-6 {
+    margin-top: 50px;
+    padding: 20px;
+}
+
+.tekst h2 {
+    color: deeppink;
+    font-size: 2rem;
+}
+
+.prva-sekcija button {
+    padding: 12px 30px;
+    background: white;
+    border: 2px solid deeppink;
+    border-radius: 12px;
+    font-weight: bold;
+}
+
+.slika1 {
+    background-image: url(img/hummingbird-1823829_640.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+}
+
+.slika2 {
+    background-image: url(img/bird-386725_640.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+}
+.prva-sekcija .col-6 .col-4 {
+    box-shadow: 2px 2px 2px  5px grey;
+}
+.prva-sekcija .col-6 .col-7 {
+    margin-left:  30px;
+    box-shadow: 2px 2px 2px  5px grey;
+}
+.druga-sekcija{
+    background:rgba(0,0,0,0.1);
+    height: 50vh;
+}
+.druga-sekcija .col-4{
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 60px;
+}
+.druga-sekcija .col-4 i {
+    font-size: 3rem;
+    color: turquoise;
+}
+.druga-sekcija .col-6 h1{
+    color: deeppink;
+}
+.treca-sekcija{
+    background-image: url(img/parrot-2756488_1920.jpg);
+    background-size: cover;
+    background-position:center;
+    height: 80vh;
+    padding-top: 250px;
+}
+.treca-sekcija .col-12{
+    background: rgba(255,255,255,0.4);
+    height: 200px;
+    margin: 0 40px;
+}
+.treca-sekcija .col-12 .col-4{
+    padding-top: 40px;
+}
+.treca-sekcija .col-4 h2{
+    color: deeppink;
+    text-align: center;
+    font-size: 3rem;
+}
+.treca-sekcija .col-4 h1{
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+}
+.cetvrta-sekcija h1{
+    text-align: center;
+    color: deeppink;
+    font-size: 3rem;
+}
+.cetvrta-sekcija .col-6 .col-6{
+    text-align: center;
+}
+.cetvrta-sekcija .col-6 .col-6 img{
+    width: 60%;
+    height: 60%;
+    border-radius: 50%;
+    box-shadow: 2px 1px 2px 8px grey;
+}
+.cetvrta-sekcija .col-6 .col-6 h2{
+    color: deeppink;
+    margin-top: 10px;
+    font-size: 2rem;
+}
+.cetvrta-sekcija .desno{
+    background-image: url(img/crni-labud.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+    margin-top: 70px;
+    box-shadow: 2px 2px 2px 8px grey;
+}
+.peta-sekcija{
+    margin-top: 20px;
+    background-image:linear-gradient(to bottom, rgba(0,0,0,0.8),rgba(255,255,255,0.1)),url(img/animal-color-colorful-416166.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 80vh;
+}
+.peta-sekcija .col-12{
+    margin: 250px 40px;
+}
+.peta-sekcija h1{
+    text-align: center;
+    color: deeppink;
+    font-size: 3rem;
+    text-transform: capitalize;
+}
+.peta-sekcija p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+}
+.peta-sekcija .col-6{
+    margin-top: 80px;
+    margin-left: 300px;
+}
+.peta-sekcija button{
+    background: rgba(255,255,255,0.1);
+    padding: 12px 30px;
+    border: 2px solid deeppink;
+    border-radius: 12px;
+    color: white;
+    font-size: 1.1rem;
+}
+.sesta-sekcija .col-8{
+    text-align: center;
+    margin-top: 20px; 
+    height: 60vh;
+}
+.sesta-sekcija .col-8 h1{
+    color: deeppink;
+}
+.roze{
+    background: deeppink;
+    height: auto;
+    margin: 10px;
+}
+.plavo{
+    background:turquoise;
+    height: auto;
+}
+.sesta-sekcija .col-3 h2{
+    color: white;
+    font-size: 3rem;
+}
+.sesta-sekcija .col-3 p{
+    font-size: 1.2rem;
+    padding-bottom: 70px;
+}
+.sesta-sekcija i{
+    font-size: 3rem;
+    color: white;
+    padding-top: 50px;
+}
+.sesta-sekcija img{
+    width: 100%;
+    height: 800px;
+    margin-bottom: 10px;
+}
+.roze{
+    margin-top: 100px;
+    height: 250px;
+}
+.plavo{
+    margin-top: 200px;
+    height: 250px;
+}
+.roze2{
+    margin-top: 300px;
+}
+.plavo2{
+    margin-top: 400px;
+}
+.sedma-sekcija{
+    background: linear-gradient(to bottom, deeppink,turquoise);
+    text-align: center;
+}
+.sedma-sekcija h1{
+    color: white;
+    text-align: center;
+    font-size: 5rem; 
+    margin-top: 30px;
+}
+.sedma-sekcija .col-4{
+    margin: 30px;
+}
+.sedma-sekcija .col-4 img{
+    width: 70%;
+    border-radius: 50%;
+    box-shadow: 2px 2px 8px 8px grey;
+}
+.sedma-sekcija .col-4 p{
+    color: white;
+}
+.sedma-sekcija .col-4 h2{
+    color: deeppink;
+    padding: 12px 30px;
+    background: rgba(255,255,255,0.4);
+    margin-top: 20px;
+}
+.osma-sekcija{
+    height: 250px;
+    text-align: center;
+}
+.osma-sekcija h1{
+    font-size: 4rem;
+    color: deeppink;
+}
+.osma-sekcija input[type=text]{
+    width: 30%;
+    height:50px;
+    border:2px solid deeppink;
+}
+.osma-sekcija button{
+    color: white;
+    background: deeppink;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 15px;
+    font-weight: 800;
+    font-size: 1.2rem;
+}
+.deveta-sekcija{
+    background-image:linear-gradient(to bottom,rgba(0,0,0,0.8),rgba(255,255,255,0.1)),url(img/footer.jpg);
+    background-size: cover;
+    background-position: left center;
+    height: 70vh;
+}
+.deveta-sekcija .desno2{
+    padding-left: 80px;
+    color: white;
+    font-size: 1.2rem;
+}
+.deveta-sekcija .desno2 h1{
+    color: deeppink;
+}
+.deveta-sekcija .levo2 h1{
+    color: deeppink;
+}
+.deveta-sekcija .levo2{
+    color: white;
+    font-size: 1.2rem;
+}
+.deveta-sekcija hr{
+    border: 3px solid white;
+    margin-top: 10px;
+}
+.deveta-sekcija .col-3{
+    margin: 20px;
+    text-align: center;
+    color: deeppink;
+    font-size: 2rem;
+}
+
